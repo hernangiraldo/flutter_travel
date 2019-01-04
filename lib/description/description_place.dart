@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'title_stars.dart';
 import 'description.dart';
+import '../shared//button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -13,9 +14,11 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new TitleStars(namePlace, stars),
-        new Description(descriptionPlace)
+        TitleStars(namePlace, stars),
+        Description(descriptionPlace),
+        ButtonPurple('Navigate')
       ],
     );
   }

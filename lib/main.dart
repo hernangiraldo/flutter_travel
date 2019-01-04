@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'description/description_place.dart';
-import 'review/reviews_list.dart';
-import 'header_appbar/header_appbar.dart';
+import 'travel_app.dart';
+import 'travel_app_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,23 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                new DescriptionPlace(
-                  'Duwili Ella',
-                  4,
-                  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-                ),
-                new ReviewsList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        )
-      )
+      home: TravelAppCupertino()
     );
   }
 }
