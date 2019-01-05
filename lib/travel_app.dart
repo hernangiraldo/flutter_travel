@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'search_travel.dart';
-import 'profile.dart';
+import 'profile/profile.dart';
 
 class TravelApp extends StatefulWidget {
   @override

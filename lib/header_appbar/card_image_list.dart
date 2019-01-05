@@ -7,7 +7,7 @@ class CardImageList extends StatelessWidget {
     return Container(
       height: 250.0,
       margin: EdgeInsets.only(
-        top: 120.0
+        top: 100.0
       ),
       child: ListView(
         padding: EdgeInsets.all(25.0),
